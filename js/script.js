@@ -1,6 +1,8 @@
 "use strict";
 const header = document.querySelector(".header"),
-    btnTotop = document.querySelector(".btn-totop");
+    btnTotop = document.querySelector(".btn-totop"),
+    contactBtn = document.querySelector(".btn.contact"),
+    sidebar = document.querySelector(".sidebar");
 
 window.addEventListener("scroll", () => {
     if (scrollY > 100) {
@@ -23,3 +25,5 @@ btnTotop.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
+
+contactBtn.addEventListener("click", () => sidebar.classList.toggle("active"));

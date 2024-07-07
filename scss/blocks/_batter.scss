@@ -1,0 +1,62 @@
+.batter{
+    margin-top: 200px;
+    text-align: center;
+    color: $bg-py;
+    &__title{
+        font-size: 48px;
+        font-weight: 700;
+        max-width: 600px;
+        margin: auto;
+        padding: 30px 0;
+    }
+    &__text{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .batter__card{
+        text-align: left;
+        transition: .5s;
+        color: whitesmoke;
+        padding: 20px;
+        width: 287.2px;
+        border: 1px solid #ddd5;
+        .card__title{
+            font-size: 25px;
+            font-weight: 600;
+            color: black;
+            margin: 20px 0;
+        }
+        .card__text{
+            color: #696969;
+        }
+        &:hover{
+            background-color: rgb(0, 0, 125);
+        }
+    }
+
+}
+
+
+
+
+@media ( max-width:620px){
+    .batter{
+        margin-top: 50px;
+        &__title{
+            font-size: 35px;
+            font-weight: 600;
+            max-width: 80%;
+            margin: auto;
+            padding: 30px 0;
+        }
+.batter__card{
+    width: 100%;
+}
+    }
+}
